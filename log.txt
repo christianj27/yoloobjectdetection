@@ -1,0 +1,414 @@
+Parsing ./cfg/yolo-full.cfg
+Parsing cfg/v1/yolo-full.cfg
+Loading bin/yolo-full.weights ...
+Successfully identified 1086814216 bytes
+Finished in 0.016987085342407227s
+Model has a VOC model name, loading VOC labels.
+
+Building net ...
+Source | Train? | Layer description                | Output size
+-------+--------+----------------------------------+---------------
+       |        | input                            | (?, 448, 448, 3)
+ Load  |  Yep!  | scale to (-1, 1)                 | (?, 448, 448, 3)
+ Load  |  Yep!  | conv 7x7p3_2    leaky            | (?, 224, 224, 64)
+ Load  |  Yep!  | maxp 2x2p0_2                     | (?, 112, 112, 64)
+ Load  |  Yep!  | conv 3x3p1_1    leaky            | (?, 112, 112, 192)
+ Load  |  Yep!  | maxp 2x2p0_2                     | (?, 56, 56, 192)
+ Load  |  Yep!  | conv 1x1p0_1    leaky            | (?, 56, 56, 128)
+ Load  |  Yep!  | conv 3x3p1_1    leaky            | (?, 56, 56, 256)
+ Load  |  Yep!  | conv 1x1p0_1    leaky            | (?, 56, 56, 256)
+ Load  |  Yep!  | conv 3x3p1_1    leaky            | (?, 56, 56, 512)
+ Load  |  Yep!  | maxp 2x2p0_2                     | (?, 28, 28, 512)
+ Load  |  Yep!  | conv 1x1p0_1    leaky            | (?, 28, 28, 256)
+ Load  |  Yep!  | conv 3x3p1_1    leaky            | (?, 28, 28, 512)
+ Load  |  Yep!  | conv 1x1p0_1    leaky            | (?, 28, 28, 256)
+ Load  |  Yep!  | conv 3x3p1_1    leaky            | (?, 28, 28, 512)
+ Load  |  Yep!  | conv 1x1p0_1    leaky            | (?, 28, 28, 256)
+ Load  |  Yep!  | conv 3x3p1_1    leaky            | (?, 28, 28, 512)
+ Load  |  Yep!  | conv 1x1p0_1    leaky            | (?, 28, 28, 256)
+ Load  |  Yep!  | conv 3x3p1_1    leaky            | (?, 28, 28, 512)
+ Load  |  Yep!  | conv 1x1p0_1    leaky            | (?, 28, 28, 512)
+ Load  |  Yep!  | conv 3x3p1_1    leaky            | (?, 28, 28, 1024)
+ Load  |  Yep!  | maxp 2x2p0_2                     | (?, 14, 14, 1024)
+ Load  |  Yep!  | conv 1x1p0_1    leaky            | (?, 14, 14, 512)
+ Load  |  Yep!  | conv 3x3p1_1    leaky            | (?, 14, 14, 1024)
+ Load  |  Yep!  | conv 1x1p0_1    leaky            | (?, 14, 14, 512)
+ Load  |  Yep!  | conv 3x3p1_1    leaky            | (?, 14, 14, 1024)
+ Load  |  Yep!  | conv 3x3p1_1    leaky            | (?, 14, 14, 1024)
+ Load  |  Yep!  | conv 3x3p1_2    leaky            | (?, 7, 7, 1024)
+ Load  |  Yep!  | conv 3x3p1_1    leaky            | (?, 7, 7, 1024)
+ Load  |  Yep!  | conv 3x3p1_1    leaky            | (?, 7, 7, 1024)
+ Load  |  Yep!  | flat                             | (?, 50176)
+ Load  |  Yep!  | full 50176 x 4096  leaky         | (?, 4096)
+ Load  |  Yep!  | drop                             | (?, 4096)
+ Load  |  Yep!  | full 4096 x 1470  linear         | (?, 1470)
+-------+--------+----------------------------------+---------------
+GPU mode with 1.0 usage
+Finished in 52.975945711135864s
+
+FPS 0.2
+FPS 3.2
+FPS 3.9
+FPS 4.1
+FPS 4.3
+FPS 3.7
+FPS 3.8
+FPS 4.2
+FPS 3.9
+FPS 4.2
+FPS 4.2
+FPS 4.0
+FPS 4.2
+FPS 4.1
+FPS 3.8
+FPS 3.8
+FPS 4.3
+FPS 3.9
+FPS 3.4
+FPS 4.1
+FPS 3.9
+FPS 4.0
+FPS 4.0
+FPS 4.1
+FPS 4.0
+FPS 4.3
+FPS 4.2
+FPS 3.7
+FPS 3.7
+FPS 4.1
+FPS 4.0
+FPS 4.0
+FPS 3.6
+FPS 4.2
+FPS 3.7
+FPS 4.2
+FPS 4.0
+FPS 3.9
+FPS 4.1
+FPS 3.6
+FPS 4.1
+FPS 4.3
+FPS 4.1
+FPS 3.8
+FPS 4.3
+FPS 4.1
+FPS 4.0
+FPS 4.0
+FPS 4.0
+FPS 4.1
+FPS 4.2
+FPS 3.9
+FPS 4.1
+FPS 4.3
+FPS 3.9
+FPS 3.8
+FPS 4.1
+FPS 3.6
+FPS 4.3
+FPS 4.3
+FPS 3.9
+FPS 3.6
+FPS 4.2
+FPS 4.2
+FPS 4.2
+FPS 4.2
+FPS 4.1
+FPS 4.3
+FPS 3.9
+FPS 4.0
+FPS 3.7
+FPS 3.8
+FPS 3.9
+FPS 4.2
+FPS 4.2
+FPS 4.2
+FPS 3.7
+FPS 4.2
+FPS 3.9
+FPS 3.7
+FPS 4.1
+FPS 4.2
+FPS 3.7
+FPS 4.2
+FPS 4.0
+FPS 4.2
+FPS 3.9
+FPS 4.1
+FPS 3.6
+FPS 3.8
+FPS 4.1
+FPS 4.1
+FPS 4.0
+FPS 4.2
+FPS 4.3
+FPS 4.2
+FPS 4.1
+FPS 4.2
+FPS 4.2
+FPS 3.8
+FPS 3.7
+FPS 4.2
+FPS 4.0
+FPS 4.1
+FPS 4.2
+FPS 4.0
+FPS 3.8
+FPS 3.5
+FPS 4.2
+FPS 3.7
+FPS 3.4
+FPS 4.2
+FPS 4.0
+FPS 4.0
+FPS 4.3
+FPS 3.7
+FPS 3.8
+FPS 4.1
+FPS 3.8
+FPS 3.7
+FPS 4.3
+FPS 4.2
+FPS 4.2
+FPS 4.3
+FPS 4.1
+FPS 3.4
+FPS 4.3
+FPS 3.8
+FPS 4.3
+FPS 4.1
+FPS 4.1
+FPS 3.9
+FPS 4.2
+FPS 3.8
+FPS 3.7
+FPS 3.7
+FPS 3.7
+FPS 3.7
+FPS 4.0
+FPS 4.3
+FPS 4.0
+FPS 3.7
+FPS 4.3
+FPS 4.0
+FPS 4.3
+FPS 4.3
+FPS 3.9
+FPS 3.8
+FPS 4.3
+FPS 4.2
+FPS 3.9
+FPS 4.2
+FPS 3.7
+FPS 4.3
+FPS 4.2
+FPS 4.2
+FPS 3.9
+FPS 4.2
+FPS 4.0
+FPS 4.3
+FPS 3.9
+FPS 3.8
+FPS 4.2
+FPS 4.1
+FPS 3.9
+FPS 3.7
+FPS 4.2
+FPS 4.0
+FPS 3.9
+FPS 4.1
+FPS 4.1
+FPS 4.2
+FPS 4.2
+FPS 3.8
+FPS 3.8
+FPS 4.2
+FPS 4.0
+FPS 3.8
+FPS 4.0
+FPS 4.2
+FPS 4.1
+FPS 4.3
+FPS 4.2
+FPS 4.1
+FPS 4.0
+FPS 4.3
+FPS 4.2
+FPS 4.1
+FPS 4.0
+FPS 3.6
+FPS 4.1
+FPS 4.0
+FPS 4.2
+FPS 4.0
+FPS 4.1
+FPS 3.8
+FPS 4.3
+FPS 3.7
+FPS 4.1
+FPS 4.2
+FPS 4.1
+FPS 4.0
+FPS 4.2
+FPS 3.6
+FPS 4.0
+FPS 4.2
+FPS 4.2
+FPS 4.1
+FPS 4.1
+FPS 3.9
+FPS 4.0
+FPS 4.0
+FPS 4.2
+FPS 3.8
+FPS 4.3
+FPS 3.6
+FPS 3.8
+FPS 4.3
+FPS 4.0
+FPS 3.8
+FPS 4.2
+FPS 3.8
+FPS 3.8
+FPS 3.6
+FPS 4.1
+FPS 4.2
+FPS 4.0
+FPS 4.2
+FPS 3.8
+FPS 3.9
+FPS 3.4
+FPS 4.2
+FPS 4.1
+FPS 4.0
+FPS 4.1
+FPS 4.1
+FPS 3.7
+FPS 3.9
+FPS 3.8
+FPS 4.0
+FPS 4.0
+FPS 4.2
+FPS 4.1
+FPS 4.1
+FPS 4.0
+FPS 4.0
+FPS 4.1
+FPS 3.8
+FPS 3.5
+FPS 3.7
+FPS 3.8
+FPS 3.9
+FPS 3.8
+FPS 4.1
+FPS 4.0
+FPS 4.1
+FPS 3.7
+FPS 4.0
+FPS 3.8
+FPS 4.2
+FPS 3.9
+FPS 4.0
+FPS 3.8
+FPS 3.9
+FPS 3.8
+FPS 4.0
+FPS 4.0
+FPS 4.0
+FPS 3.9
+FPS 4.1
+FPS 4.1
+FPS 4.1
+FPS 4.0
+FPS 3.9
+FPS 4.1
+FPS 4.1
+FPS 4.2
+FPS 4.2
+FPS 3.7
+FPS 3.9
+FPS 4.3
+FPS 4.2
+FPS 3.7
+FPS 3.9
+FPS 4.2
+FPS 4.1
+FPS 3.8
+FPS 4.2
+FPS 3.7
+FPS 4.0
+FPS 3.9
+FPS 4.1
+FPS 4.0
+FPS 4.2
+FPS 3.9
+FPS 4.0
+FPS 4.2
+FPS 3.8
+FPS 4.2
+FPS 4.0
+FPS 3.9
+FPS 4.0
+FPS 3.7
+FPS 4.3
+FPS 3.5
+FPS 3.7
+FPS 3.8
+FPS 3.7
+FPS 4.0
+FPS 3.7
+FPS 4.0
+FPS 4.3
+FPS 3.9
+FPS 4.0
+FPS 4.3
+FPS 3.8
+FPS 3.7
+FPS 3.7
+FPS 3.7
+FPS 4.2
+FPS 3.6
+FPS 3.9
+FPS 3.9
+FPS 4.2
+FPS 4.1
+FPS 4.0
+FPS 4.2
+FPS 3.8
+FPS 3.7
+FPS 3.8
+FPS 4.2
+FPS 3.7
+FPS 3.9
+FPS 4.0
+FPS 3.8
+FPS 4.2
+FPS 4.2
+FPS 3.8
+FPS 4.0
+FPS 3.9
+FPS 4.1
+FPS 3.8
+FPS 3.2
+FPS 3.2
+FPS 3.9
+FPS 4.0
+FPS 3.7
+FPS 4.2
+FPS 3.9
+FPS 4.1
+FPS 3.9
+FPS 4.2
+FPS 4.1
+FPS 3.9
+FPS 3.8
+FPS 4.1
+FPS 3.8
+FPS 3.6
+FPS 4.1
+FPS 4.2
+FPS 4.1
+FPS 3.8
+FPS 4.2
+FPS 3.9
+FPS 3.8
+FPS 3.9
